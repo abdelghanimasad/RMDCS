@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/transportation_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Side menu*/
+
+#sidemenu {
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  left: -40%;
+  background-color: black;
+  transition: all 0.3s ease;
+  z-index: 10;
+  
+}
+
+#sidemenu li { 
+  color: white;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid white;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  list-style-type: none;
+  margin-left: -8%
+}
+
+.toggle-menu {
+  position: absolute;
+  left: 105%;
+  top: 15px;
+  background-color: grey;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.toggle-menu span {
+  display: block;
+  background-color: white;
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+}
+
+.toggle-menu span {
+  cursor: pointer;
+}
+
+#sidemenu.active {
+  left: 0;
+}
+
+#sidemenu li:hover{
+  cursor: pointer;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+li a {
+  display: block; /* Makes the link fill the li */
+  padding: 10px; /* Or your preferred padding */
+  color: inherit; /* Takes the text color of the li */
+  text-decoration: none; /* Removes the underline */
+}
+
+li a:hover{
+  color: inherit;
+}
+
+h1 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3em;
+  color: whitesmoke;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+}
+
+h1 a{
+  font-size: 1em;
+}
+
+h2{
+  color: rgb(200,200,200);
+  text-align: center;
+}
+
+h1 a:hover{
+  color:white;
+}
+
+#DB{
+  text-align: left;
+  position: relative;
+  left: 3%;
+  top: 3%;
+  margin: 40px;
+  display:inline-block;
+  border-radius: 10px;
+}
+
+#body {
+  position: relative;
+  align-self: center;
+  margin-left: 18%;
+  width: 60%;
+  height: 80%;
+
+  background: linear-gradient(to right, #cac2b6, #ffffff);
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/*Dashboard cards*/
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.card{
+  background: grey;
+  width: 270px;
+  margin: 40px;
+  border-radius: 15px;
+}
+
+.card-image{
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-bg {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 4em;
+  background: linear-gradient(to right, #312b22, #211515);
+}
+
+
+.card a{
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  border-radius: 5px;
+}
+
+.card:hover{
+  background-color: rgb(62,62,62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}

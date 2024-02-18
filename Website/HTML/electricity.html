@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+    <script>
+        function toggleBar() 
+        {
+            document.getElementById('sidemenu').classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div id="sidemenu">
+        <div class="toggle-menu" onclick="toggleBar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul style = "color:white;">
+            <li><a href = "electricity.html">Electricity Consumption</a></li>
+            <li><a>Weather Condition</a></li>
+            <li><a>Public Transportation Data</a></li>
+            <li><a>Traffic Timing</a></li>
+            <li><a>Non-Car</a></li>
+            <li><a>Accident Analysis</a></li>
+        </ul>
+    </div>
+    <h1><a href = "home.html">Sigma Tech</a></h1>
+
+    <div id="body">
+    <h1 id="DB">Electricity Consumption</h1>
+
+    <img style = "position: relative; left: 9em; width: 75%; top: 1em;" src = ../IMG/electricity_chart1.png alt = "not text">
+
+
+    </div>
+
+    <footer>
+        <div class="cont">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:Info@example.com</p>
+                <p>Phone:</p>
+                <p>Address:</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                 </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 SigmaTech . All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
